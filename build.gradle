@@ -14,6 +14,11 @@ repositories {
 
 dependencies {
     implementation 'org.springframework.boot:spring-boot-starter-webflux'
+    compile group: 'org.springframework.security', name: 'spring-security-config', version: '5.2.2.RELEASE'
+    compile group: 'org.springframework.security', name: 'spring-security-oauth2-jose', version: '5.2.2.RELEASE'
+    compile group: 'org.springframework.security', name: 'spring-security-oauth2-client', version: '5.2.2.RELEASE'
+    compile group: 'org.springframework.security', name: 'spring-security-oauth2-resource-server', version: '5.2.2.RELEASE'
+
     testImplementation('org.springframework.boot:spring-boot-starter-test') {
         exclude group: 'org.junit.vintage', module: 'junit-vintage-engine'
     }

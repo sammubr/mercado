@@ -32,4 +32,9 @@ public class ProductController {
         return String.format("Hello, %s!", jwt.getSubject());
     }
 
+    @GetMapping("/liberado")
+    public String index2() {
+        return "teste acesso liberado";
+    }
+
 }
